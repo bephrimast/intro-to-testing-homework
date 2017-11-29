@@ -3,7 +3,7 @@ Homework for group 1 (2017-11-25)
 
 ## Individual assignments
 
-Each assignment should be done as a separate Pull Request and it will be reviewed by others. These
+Each assignment should be done as a separate Pull Request to this repo and it will be reviewed by others.
 
 Deadline is Monday, December 4th at 23:59. 
 
@@ -32,10 +32,14 @@ This one is from codility https://codility.com/programmers/lessons/3-time_comple
 
 Another one from codility: https://codility.com/programmers/lessons/7-stacks_and_queues/brackets/
 
+If you have any questions, ask on the group1 Slack channel.
+
 
 ## Team assignment: Currency exchange
 
 Deadline is Wednesday, December 6th at 23:59. 
+
+Teams are as they were on the workshop, Tomo & FilipLa and Fran & FilipB.
 
 Build the core of the application that can calculate if customer bought euros 7 days ago, would they be earning money or not.
 
@@ -67,6 +71,9 @@ Notices:
 4) I expect 100% test coverage
 5) I suggest mocking as much as possible
 6) Do create live test that will connect to API and return the live data
-7) Create a pull request so the other team/group can review it (dont forget, if the other group reviews they dont know the assignment!)
+7) Create a pull request to this repo so the other team/group can review it (dont forget, if the other group reviews they dont know the assignment!)
+8) As we are building the core of the app, there is no ui/console or anything so tests should make you comfortable in how it works.
+
+If you have any questions, ask on the group1 Slack channel.
 
 
