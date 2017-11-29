@@ -12,13 +12,9 @@ Deadline is Monday, December 4th at 23:59.
 On the workshop we implemented this for integers, now lets do it for floats/doubles with precision on 2nd decimal.
 
 Scenario: Calculating sales tax 
-
 Given in USA prices do not include sales tax
-
 And sales tax is 8%
-
 When a person is buying a product for $100.00
-
 They have to pay $108.00
 
 
