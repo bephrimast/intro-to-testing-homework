@@ -66,12 +66,12 @@ Then I would loose 0.2 per each EUR I bought
 
 Notices:
 1) Talk to your team mate about structure of the code
-2) Split tasks evenly (I know exact 50% split is not possible but it's more important to work together then to do the assignement!)
+2) Split tasks evenly (I know exact 50% split is not possible but it's more important to work together then to do the assignment!)
 3) You should work on the same branch (not master)
 4) I expect 100% test coverage
 5) I suggest mocking as much as possible
 6) Do create live test that will connect to API and return the live data
-7) Create a pull request to this repo so the other team/group can review it (dont forget, if the other group reviews they dont know the assignment!)
+7) Create a pull request to this repo so the other team/group can review it (don't forget, if the other group reviews they don't know the assignment!)
 8) As we are building the core of the app, there is no ui/console or anything so tests should make you comfortable in how it works.
 
 If you have any questions, ask on the group1 Slack channel.
