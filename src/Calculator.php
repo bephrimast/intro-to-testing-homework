@@ -24,6 +24,6 @@ class Calculator
 
     public function calculateWithPercentage($input, $percentage)
     {
-        return ceil($input * (100 + $percentage) / 100);
+        return ceil($input * (100 + $percentage)) / 100;
     }
 }

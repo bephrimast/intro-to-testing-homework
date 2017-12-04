@@ -5,6 +5,7 @@ namespace Tests;
 use Calculator;
 use PHPUnit\Framework\TestCase;
 
+
 class CalculatorTest extends TestCase
 {
     /** @var Calculator */
@@ -131,10 +132,50 @@ class CalculatorTest extends TestCase
         self::assertEquals(125, $result);
     }
 
+    /**
+     * This will now fail because we are rounding up two decimals.
+     *
+     * We can:
+     *
+     * a) adjust the expected value
+     * b) remove the test
+     * c) add an exception for integer values
+     *
+     * I choose a) because it works differently than the integer one and I think the test should reflect that.
+     */
     public function test25PercentWillRoundUp()
     {
         $result = $this->calculator->calculateWithPercentage(10001, 25);
 
-        self::assertEquals(12502, $result);
+        self::assertEquals(12501.25, $result);
+    }
+
+    /**
+     * Scenario: Calculating sales tax
+     * Given in USA prices do not include sales tax
+     * And sales tax is 8%
+     * When a person is buying a product for $100.00
+     * They have to pay $108.00
+     */
+    public function testSalesTaxIsCalculatedProperly()
+    {
+        $result = $this->calculator->calculateWithPercentage(100, 8);
+
+        self::assertEquals(108, $result);
+    }
+
+    /**
+     * Scenario: Rounding up sales tax
+     * Given in USA prices do not include sales tax
+     * And sales tax is 8%
+     * And cent is the smallest measure
+     * When a person is buying a product for $100.01
+     * They have to pay $108.02 since we need to round up the number to next cent
+     */
+    public function testSalesTaxCentsAreRoundedUp()
+    {
+        $result = $this->calculator->calculateWithPercentage(100.01, 8);
+
+        self::assertEquals(108.02, $result);
     }
 }
